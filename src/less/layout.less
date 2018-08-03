@@ -4,20 +4,22 @@
 /*=========================== Header =============================== */
 
 .header {
-	&__top {
-		display: flex;
-		justify-content: space-between;
+	&__img img{
+		padding: 3px;
 	}
 
 	&__title {
-		text-align: center;
-		margin-top: 200px;
+		
+		span {
+			padding: 0 10px;
+		}
 	}
 
 	&__btn {
-		text-align: center;
-		margin-top: 200px;
-	
+		margin-top: 10%;
+		a {
+			padding: 10px 30px;
+		}	
 	}
 
 	&__parallax {
@@ -38,6 +40,147 @@
 
 }
 
+/*========================== Section About =====================*/
 
+.about {
+	padding: 100px 0;
+
+	&__title {
+		text-align: center;
+		margin-bottom: -20px;
+
+	}
+
+	&__text {
+		text-align: center;
+	}
+}
+
+.aboutItems {
+	.row-flex();
+	justify-content: space-around;
+	.md(justify-content, center);
+	margin: 100px 0;
+
+	.aboutItem {
+		.col();
+		.size(5);
+		.size-md(10);
+		.size-xs(12);
+		
+		img {
+
+		}
+
+		&__title {
+
+		}
+
+		&__text {
+			
+		}
+	}
+}
+
+/*========================== Section Work =====================*/
+
+.work {
+	margin: 100px 0;
+	&__title {
+		text-align: center;
+		margin-bottom: -20px;
+	}
+
+	&__text {
+		text-align: center;
+	}
+}
+
+.workItems {
+	.row-flex();
+	justify-content: center;
+	
+	margin: 100px 0;
+
+	.workItem {
+		.col();
+		.size(4);
+		.size-md(6);
+		.size-xs(10);
+		
+		margin-bottom: 30px;
+
+		img {
+		
+		}
+	}	
+}
+
+
+/*========================== Section Services =====================*/
+
+.services {
+	padding: 100px 0;
+
+	&__title {
+		text-align: center;
+		margin-bottom: -20px;
+	}
+
+	&__text {
+		text-align: center;
+	}
+
+}
+
+.servicesItems {
+	.row-flex();
+	justify-content: center;
+
+	margin-top: 100px;
+
+	.servicesItem {
+		margin-bottom: 30px;
+		
+		.col();
+		.size(7);
+		.size-md(10);
+		
+	}
+
+	.mini {
+		.size(5);
+	}
+
+}
+
+.servicesItem__info {
+	position: relative;
+	top: -25px;
+	padding: 0 70px;
+	box-sizing: border-box;
+
+	.xs(padding, 0 20px);
+
+	h4 {
+		padding-top: 100px;
+		.xs(padding-top, 10%);
+	}
+
+	p {
+	
+	}
+
+	.servicesItem__btn {
+
+		margin-top: 50px;
+		.xs(margin-top, 20px);
+		}
+}
+
+
+
+
+/*========================== Section Services =====================*/
 
 
